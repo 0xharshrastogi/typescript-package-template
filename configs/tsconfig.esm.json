@@ -1,0 +1,23 @@
+{
+    "extends": "../tsconfig.json",
+
+    "compilerOptions": {
+        // Emit settings
+        "noEmit": false,
+        "outDir": "../dist/esm",
+        "declaration": true,
+        "declarationMap": true,
+        "sourceMap": true,
+
+        // Module Settings
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+
+        // Interop settings
+        "verbatimModuleSyntax": true
+
+        // Project Settings
+    },
+
+    "include": ["../src"]
+}

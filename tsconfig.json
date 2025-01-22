@@ -1,0 +1,42 @@
+{
+    "compilerOptions": {
+        // Module settings
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "rootDir": "src",
+        "resolveJsonModule": true,
+
+        // Emit settings
+        "target": "ESNext",
+        "noEmit": true,
+        "noEmitOnError": true,
+
+        // Type checking settings
+        "strict": true,
+        "alwaysStrict": true,
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false,
+        "noImplicitAny": true,
+        "noImplicitOverride": true,
+        "noPropertyAccessFromIndexSignature": false,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+
+        // Interop settings
+        "isolatedModules": true,
+
+        // Language and Environment settings
+        "lib": ["ESNext"],
+
+        // Output settings
+        "skipLibCheck": true,
+
+        // Project settings
+
+        // Typescript Diagnostics settings
+        "traceResolution": false
+    },
+
+    "include": ["src"],
+    "exclude": ["node_modules", "dist"]
+}

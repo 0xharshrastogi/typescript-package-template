@@ -1,0 +1,24 @@
+{
+    "name": "your-package-name",
+    "version": "1.0.0",
+    "description": "YOUR DESCRIPTION",
+    "type": "module",
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "exports": {
+        ".": {
+            "import": "./dist/esm/index.js",
+            "require": "./dist/cjs/index.js"
+        }
+    },
+    "scripts": {
+        "watch": "tsc -w -p configs/tsconfig.esm.json & tsc -w -p configs/tsconfig.cjs.json",
+        "build": "pnpm build:esm & pnpm build:cjs",
+        "build:esm": "tsc -p configs/tsconfig.esm.json",
+        "build:cjs": "tsc -p configs/tsconfig.cjs.json",
+        "type-check": "tsc -p tsconfig.json"
+    },
+    "devDependencies": {
+        "typescript": "^5.7.3"
+    }
+}
