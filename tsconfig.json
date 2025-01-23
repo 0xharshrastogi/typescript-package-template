@@ -24,6 +24,8 @@
 
         // Interop settings
         "isolatedModules": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
 
         // Language and Environment settings
         "lib": ["ESNext"],
