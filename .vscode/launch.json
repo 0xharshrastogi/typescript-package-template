@@ -8,6 +8,7 @@
             "type": "node",
             "name": "Start Debugging",
             "request": "launch",
+            "preLaunchTask": "Build Project",
             "program": "${workspaceFolder}/dist/esm/index.js"
         }
     ]
