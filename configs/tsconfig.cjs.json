@@ -6,7 +6,7 @@
         "declaration": true,
         "declarationMap": true,
         "sourceMap": true,
-        "outDir": "${configDir}/dist/cjs",
+        "outDir": "../dist/cjs",
 
         // Module Settings
         "module": "CommonJS",
