@@ -13,9 +13,10 @@
     },
     "scripts": {
         "watch": "tsc -w -p configs/tsconfig.esm.json & tsc -w -p configs/tsconfig.cjs.json",
-        "build": "pnpm build:esm & pnpm build:cjs",
+        "build": "pnpm clean && pnpm build:esm && pnpm build:cjs",
         "build:esm": "tsc -p configs/tsconfig.esm.json",
         "build:cjs": "tsc -p configs/tsconfig.cjs.json",
+        "clean": "rm -rf dist",
         "type-check": "tsc -p tsconfig.json"
     },
     "devDependencies": {
