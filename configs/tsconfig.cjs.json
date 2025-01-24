@@ -1,13 +1,12 @@
 {
     "extends": "../tsconfig.json",
-
     "compilerOptions": {
         // Emit settings
         "noEmit": false,
         "declaration": true,
         "declarationMap": true,
         "sourceMap": true,
-        "outDir": "../dist/cjs",
+        "outDir": "${configDir}/dist/cjs",
 
         // Module Settings
         "module": "CommonJS",
@@ -15,6 +14,5 @@
 
         // Project Settings
     },
-
     "include": ["../src"]
 }

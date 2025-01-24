@@ -21,6 +21,7 @@
         "noPropertyAccessFromIndexSignature": false,
         "noUnusedLocals": true,
         "noUnusedParameters": true,
+        "useUnknownInCatchVariables": true,
 
         // Interop settings
         "isolatedModules": true,
